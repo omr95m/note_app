@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tharwat_npte_app/constant.dart';
 import 'package:tharwat_npte_app/views/widget/addNoteButton.dart';
 import 'package:tharwat_npte_app/views/widget/note_App_body.dart';
 
@@ -9,9 +10,11 @@ class NotesView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.blue,
+        backgroundColor: kprimarycolor,
         onPressed: () {
           showModalBottomSheet(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16)),
               context: context,
               builder: (context) {
                 return const AddNoteButtonSheet();
