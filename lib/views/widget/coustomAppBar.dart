@@ -1,20 +1,25 @@
 // ignore: file_names
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:tharwat_npte_app/views/widget/coustomIconSearch.dart';
 
 class CoustomAppBar extends StatelessWidget {
-  const CoustomAppBar({super.key});
+  final title;
+  final IconData icon;
+  const CoustomAppBar({super.key, this.title, required this.icon});
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
         Text(
-          'Notes',
-          style: TextStyle(fontSize: 28),
+          title,
+          style: const TextStyle(fontSize: 28),
         ),
-        Spacer(),
-        SearchWidget()
+        const Spacer(),
+        SearchWidget(
+          icon: icon,
+        )
       ],
     );
   }

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 class SearchWidget extends StatelessWidget {
+  final icon;
   const SearchWidget({
     super.key,
+    this.icon,
   });
 
   @override
@@ -13,11 +15,8 @@ class SearchWidget extends StatelessWidget {
       decoration: BoxDecoration(
           color: Colors.white.withOpacity(0.5),
           borderRadius: BorderRadius.circular(15)),
-      child: const Center(
-        child: Icon(
-          Icons.search,
-          size: 28,
-        ),
+      child: Center(
+        child: Icon(icon),
       ),
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tharwat_npte_app/constant.dart';
 import 'package:tharwat_npte_app/constant.dart';
+import 'package:tharwat_npte_app/views/widget/customButton.dart';
 import 'package:tharwat_npte_app/views/widget/text_fild.dart';
 
 class AddNoteButtonSheet extends StatelessWidget {
@@ -22,7 +23,11 @@ class AddNoteButtonSheet extends StatelessWidget {
           const SizedBox(
             height: 16,
           ),
-          TextFild(text: 'Contect', max: 5)
+          TextFild(text: 'Contect', max: 5),
+          SizedBox(
+            height: 15,
+          ),
+          CustomButton(),
         ],
       ),
     );
