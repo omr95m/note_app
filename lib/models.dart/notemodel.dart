@@ -2,6 +2,7 @@ import 'package:hive/hive.dart';
 part 'notemodel.g.dart';
 
 @HiveType(typeId: 0)
+// ignore: camel_case_types
 class notemode extends HiveObject {
   @HiveField(0)
   final String title;

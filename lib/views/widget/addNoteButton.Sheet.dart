@@ -1,35 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:tharwat_npte_app/constant.dart';
-import 'package:tharwat_npte_app/constant.dart';
-import 'package:tharwat_npte_app/views/widget/customButton.dart';
-import 'package:tharwat_npte_app/views/widget/text_fild.dart';
+import 'package:tharwat_npte_app/views/widget/EditNoteViewBody.dart';
 
 class AddNoteButtonSheet extends StatelessWidget {
   const AddNoteButtonSheet({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0),
-      child: Column(
-        children: [
-          const SizedBox(
-            height: 35,
-          ),
-          TextFild(
-            text: 'Titl',
-            max: 1,
-          ),
-          const SizedBox(
-            height: 16,
-          ),
-          TextFild(text: 'Contect', max: 5),
-          SizedBox(
-            height: 15,
-          ),
-          CustomButton(),
-        ],
-      ),
-    );
+    return const Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16.0),
+        child: SingleChildScrollView(child: AddNoteForm()));
   }
 }

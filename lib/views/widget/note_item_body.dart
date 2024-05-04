@@ -10,7 +10,7 @@ class NoteItem extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return EditNoteView();
+          return const EditNoteView();
         }));
       },
       child: Container(
@@ -27,7 +27,7 @@ class NoteItem extends StatelessWidget {
           children: [
             ListTile(
               title: const Text('Flutter Tips',
-                  style: const TextStyle(color: Colors.black, fontSize: 30)),
+                  style: TextStyle(color: Colors.black, fontSize: 30)),
               subtitle: Text(
                 'Build your creare With Omar mohammad',
                 style: TextStyle(
