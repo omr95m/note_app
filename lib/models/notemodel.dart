@@ -3,7 +3,7 @@ part 'notemodel.g.dart';
 
 @HiveType(typeId: 0)
 // ignore: camel_case_types
-class notemode extends HiveObject {
+class Notemodel extends HiveObject {
   @HiveField(0)
   final String title;
   @HiveField(1)
@@ -13,7 +13,7 @@ class notemode extends HiveObject {
   @HiveField(3)
   final int color;
 
-  notemode(
+  Notemodel(
       {required this.title,
       required this.subTitle,
       required this.data,
